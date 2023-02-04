@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <span>第一個數:</span><input id="a1" type="text" placeholder="ex:1234"><br>
+        <span>第二個數:</span><input id="b1" type="text" placeholder="ex:1234"/><br>
+        <button onclick="sum()">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="mutiple()">*</button>
+        <button onclick="divide()">/</button><br>
+        <output id="c"></output><br>
+        
+        <script>
+            function sum(){
+                var a1=parseInt(document.getElementById('a1').value);
+                var b1=parseInt(document.getElementById('b1').value);
+                document.getElementById('c').value=a1+b1
+        }
+            function minus(){
+                var a1=parseInt(document.getElementById('a1').value);
+                var b1=parseInt(document.getElementById('b1').value);
+                document.getElementById('c').value=a1-b1
+        }
+            function mutiple(){
+                var a1=parseInt(document.getElementById('a1').value);
+                var b1=parseInt(document.getElementById('b1').value);
+                document.getElementById('c').value=a1*b1
+        }
+            function divide(){
+                var a1=parseInt(document.getElementById('a1').value);
+                var b1=parseInt(document.getElementById('b1').value);
+                document.getElementById('c').value=a1/b1
+        }
+        </script>
+    </body>
+</html>
